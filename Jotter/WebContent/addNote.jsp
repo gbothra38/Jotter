@@ -44,7 +44,7 @@
 			%>            <form action="UserNotes" method="post" enctype="multipart/form-data">
 			
 			<% if(user==null){
-			response.sendRedirect("index.jsp");
+			response.sendRedirect("login.jsp");
 			}
 			else{%>
 			
@@ -62,8 +62,6 @@
               </div>
               
                
-             
-
               <input type="submit" value="Add" class="btn text-white btn-block btn-primary">
 
             

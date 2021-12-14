@@ -17,7 +17,7 @@ public class MailFunction {
 		properties.put("mail.smtp.port", "587");
 		
 		String myEmailString="gbothra98@gmail.com";
-		String myPasswordString="Gaurav@1998";
+		String myPasswordString="";
 		
 		Session session=Session.getInstance(properties, new Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
@@ -51,7 +51,7 @@ public class MailFunction {
 				message.setContent(""
 						+ "<h1>Jotter: Change your password </h1><br>"
 						+ "OTP (One Time password): " + otpString
-						+ "<h2><p><a href='http://127.0.0.1:8080/Jotter/otpAndNewPassword.jsp'>Reset Password</a></p></h2>","text/html; charset=utf-8");
+						+ "<h2><p><a href='http://127.0.0.1:8088/Jotter/otpAndNewPassword.jsp'>Reset Password</a></p></h2>","text/html; charset=utf-8");
 				return message;
 			} catch (AddressException e) {
 				// TODO Auto-generated catch block

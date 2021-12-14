@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Edit Note</title>
 </head>
 <body>
 
@@ -52,23 +52,19 @@
 			<%
 			session.removeAttribute("failed-msg");
 			}
-			%>            <form action="JotterEditNote" method="post">
-			
-			
-			
-			<input type="hidden" value="<%= notes_id %>" name="notes_id">
-			
-              <div class="form-group">
-                <input type="text" class="form-control" id="title" name="title" placeholder="Title" value="<%=jotter.getTitleString() %>" required>
-              </div>
-               <div class="form-group">
-                <textarea type="text" class="form-control" id="content" name="content" placeholder="Content"><%= jotter.getContentString() %></textarea>
-              </div>
-               
-              <input type="submit" value="Edit" name="edit" class="btn text-white btn-block btn-primary">
+			%>            
+			<form action="JotterEditNote" method="post">
+				<input type="hidden" value="<%= notes_id %>" name="notes_id">
+				
+	              <div class="form-group">
+	                <input type="text" class="form-control" id="title" name="title" placeholder="Title" value="<%=jotter.getTitleString() %>" required>
+	              </div>
+	               <div class="form-group">
+	                <textarea type="text" class="form-control" id="content" name="content" placeholder="Content"><%= jotter.getContentString() %></textarea>
+	              </div>
+	               
+	             <input type="submit" value="Edit" name="edit" class="btn text-white btn-block btn-primary">
 
-            
-              
             </form>
             </div>
           </div>

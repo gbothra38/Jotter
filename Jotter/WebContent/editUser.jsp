@@ -87,7 +87,7 @@
 			 
 			 Phone Number:
 			<!-- <spam style="color:red" id="password_error">*</spam> --> 
-			<input type="text" id="phone_number" name="phone_number" value="<%= user.getPhone_number() %>" required></input><br>
+			<!--  <input type="text" id="phone_number" name="phone_number" value="<%= /* user.getPhone_number() */ %>" required></input><br>-->
 			
 			<input type="submit" name="register" value="Submit"></input>
 		</form>

@@ -34,7 +34,7 @@ public String InputStreamToString(InputStream inputStream) throws IOException {
 }
 %>
 <%@ include file="navBar.jsp" %>
-	<% if(user1==null) response.sendRedirect("index.jsp"); %>
+	<% if(user1==null) response.sendRedirect("login.jsp"); %>
 	
 	
 	<%
